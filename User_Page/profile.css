@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-image: url(/TEST/image/HERO\ BG.png);
+}
+.logo-div{
+    display: block;
+    unicode-bidi: isolate;
+}
+.logo{
+    font-size: 50px;
+    font-weight: 700;
+}
+header {
+    padding: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a, button {
+    margin: 0 10px;
+    color: #00252E;
+    text-decoration: none;
+}
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+.button_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+button {
+    box-shadow: 3px 3px 3px #ffc4e9;
+    color: black;
+    background-color: #ffecf8;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 15px;
+    cursor: pointer;
+    font-weight: 700;
+   
+}
+.weave{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    
+  }
+  .footer {
+    background: #00252e;
+background: repeating-radial-gradient(circle farthest-corner at bottom right, #00252e 0%, rgba(0,37,46,0.88) 20%);
+background: -webkit-repeating-radial-gradient(circle farthest-corner at bottom right, #00252e 0%, rgba(0,37,46,0.88) 20%);
+background: -moz-repeating-radial-gradient(circle farthest-corner at bottom right, #00252e 0%, rgba(0,37,46,0.88) 20%);
+    padding: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-brand h2 {
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+    color: white;
+}
+
+.footer-column h3 {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.footer-column a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+}
+h1{
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 42px;
+    margin-left: 367px;
+}
+button_flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
