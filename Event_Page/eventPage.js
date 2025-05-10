@@ -30,9 +30,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const logo = document.getElementById("logo"); 
 
     function goToHome() {
-        window.location.href = "D:/Meetly/userRegistr/mainPage/index.html"; 
+        window.location.href = "../Main_Page/index.html"; 
     }
     if (logo) {
         logo.addEventListener("click", goToHome);
     }
 });
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slide').length;
+let index = 0;
+
+document.querySelector('.next').addEventListener('click', () => {
+  index = (index + 1) % totalSlides;
+  updateSlide();
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+  index = (index - 1 + totalSlides) % totalSlides;
+  updateSlide();
+});
+
+function updateSlide() {
+  slides.style.transform = `translateX(-${index * 660}px)`;
+}

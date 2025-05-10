@@ -1,22 +1,25 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
+    background-image: url(/TEST/image/HERO\ BG.png);
+}
+.logo-div{
+    display: block;
+    unicode-bidi: isolate;
 }
 .logo{
-    font-size: 24px;
-    font-weight: 600;
-    margin-left: 160px;
+    font-size: 50px;
+    font-weight: 700;
 }
 header {
-    background: linear-gradient(#FF7D29, white);
-    padding: 40px;
+    padding: 54px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 nav a, button {
     margin: 0 10px;
-    color: white;
+    color: #00252E;
     text-decoration: none;
 }
 a {
@@ -25,11 +28,14 @@ a {
 }
 
 button {
-    background: #c94f00;
-    border-radius: 10px;
+    box-shadow: 3px 3px 3px #ffc4e9;
+    color: black;
+    background-color: #ffecf8;
+    border-radius: 30px;
     border: none;
-    padding: 5px 10px;
+    padding: 15px 15px;
     cursor: pointer;
+    font-weight: 700;
 }
 main {
     text-align: center;
@@ -43,7 +49,7 @@ main {
     padding: 20px;
 }
 .event-card {
-    background: #ffe4d3;
+    background: #dbf5ff;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
@@ -54,14 +60,12 @@ main {
     background: lightgray;
     border-radius: 5px;
 }
-footer{
-    background: linear-gradient(white, #FF7D29);
-}
-
 .footer {
-    background-color: #858099;
-    padding: 30px;
-    color: #000;
+    background: #00252e;
+background: repeating-radial-gradient(circle farthest-corner at bottom right, #00252e 0%, rgba(0,37,46,0.88) 20%);
+background: -webkit-repeating-radial-gradient(circle farthest-corner at bottom right, #00252e 0%, rgba(0,37,46,0.88) 20%);
+background: -moz-repeating-radial-gradient(circle farthest-corner at bottom right, #00252e 0%, rgba(0,37,46,0.88) 20%);
+    padding: 40px;
 }
 
 .footer-container {
@@ -73,8 +77,10 @@ footer{
 }
 
 .footer-brand h2 {
-    margin: 0;
-    font-size: 24px;
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    
 }
 
 .social-icons {
@@ -90,16 +96,24 @@ footer{
 .footer-links {
     display: flex;
     gap: 50px;
+    color: white;
 }
 
 .footer-column h3 {
     margin: 0;
     font-size: 18px;
+    color: white;
 }
 
 .footer-column a {
     display: block;
     text-decoration: none;
-    color: #333;
+    color: white;
     margin-top: 5px;
 }
+.weave{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    
+  }
